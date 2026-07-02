@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    const path = window.location.pathname.replace('/', '');
+    const params = window.location.search;
+    const deepLink = 'cambioo://' + path + params;
+    window.location.href = deepLink;
+  </script>
+</head>
+<body>
+  <p>Opening Cambioo...</p>
+</body>
+</html>
