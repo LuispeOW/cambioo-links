@@ -4,239 +4,87 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — Cambioo</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --purple-deep: #1A0828;
-    --purple-mid: #2A0F3E;
-    --gold: #F5C842;
-    --violet: #7C3AAD;
-    --cream: #F5EFE0;
-    --cream-dim: #C9BEDA;
-  }
-
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-
-  body {
-    background: var(--purple-deep);
-    color: var(--cream);
-    font-family: 'Manrope', sans-serif;
-    line-height: 1.7;
-  }
-
-  a { color: var(--gold); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-
-  nav {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: rgba(26, 8, 40, 0.9);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(245, 200, 66, 0.15);
-  }
-
-  .nav-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 24px;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .logo-mark {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 700;
-    font-size: 1.15rem;
-    color: var(--gold);
-  }
-
-  .logo-mark svg { width: 22px; height: 22px; }
-
-  .back-link {
-    font-size: 0.9rem;
-    color: var(--cream-dim);
-  }
-
-  .back-link:hover { color: var(--gold); }
-
-  main {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 56px 24px 80px;
-  }
-
-  main > *:first-child {
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 600;
-    font-size: clamp(1.8rem, 5vw, 2.4rem);
-    color: var(--cream);
-    margin-bottom: 8px;
-  }
-
-  main > p:nth-of-type(1) {
-    color: var(--cream-dim);
-    font-size: 0.95rem;
-    margin-bottom: 36px;
-  }
-
-  h1, h2, h3 {
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 600;
-    color: var(--cream);
-  }
-
-  h2 {
-    font-size: 1.35rem;
-    margin: 36px 0 14px;
-    padding-top: 8px;
-    border-top: 1px solid rgba(245, 200, 66, 0.15);
-  }
-
-  main > h2:first-of-type { border-top: none; padding-top: 0; }
-
-  p {
-    color: var(--cream-dim);
-    margin-bottom: 14px;
-    font-size: 1rem;
-  }
-
-  strong { color: var(--cream); }
-
-  ul, ol {
-    color: var(--cream-dim);
-    margin: 0 0 14px 22px;
-  }
-
-  li { margin-bottom: 8px; }
-
-  hr {
-    border: none;
-    border-top: 1px solid rgba(245, 200, 66, 0.15);
-    margin: 32px 0;
-  }
-
-  footer {
-    border-top: 1px solid rgba(245, 200, 66, 0.15);
-    padding: 32px 24px;
-  }
-
-  .footer-inner {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .footer-links {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-    font-size: 0.85rem;
-    color: var(--cream-dim);
-  }
-
-  .footer-links a { color: var(--cream-dim); }
-  .footer-links a:hover { color: var(--gold); }
-
-  .footer-copy {
-    width: 100%;
-    text-align: center;
-    font-size: 0.8rem;
-    color: var(--cream-dim);
-    opacity: 0.6;
-    margin-top: 6px;
-  }
-</style>
+<link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-
-<nav>
+<div class="wrap">
+  <div class="brand"><a href="/">CAMBIOO</a></div>
+  <nav class="legal-nav">
     <a href="/">Home</a>
-    <a href="/privacy">Privacy Policy</a>
+    <a href="/privacy" class="active">Privacy Policy</a>
     <a href="/terms">Terms of Use</a>
-    <a href="/guidelines" class="active">Community Guidelines</a>
+    <a href="/guidelines">Community Guidelines</a>
     <a href="/support">Support</a>
-</nav>
+  </nav>
+  <h1>Privacy Policy for Cambioo</h1>
+  <p class="meta">Last updated: July 16, 2026 · Effective date: July 16, 2026</p>
 
-<main>
-<h1>Privacy Policy for Cambioo</h1>
-<p><strong>Last updated: July 16, 2026</strong> · <strong>Effective date: July 16, 2026</strong></p>
-<h2>1. Who We Are</h2>
-<p>Cambioo is a mobile card game developed and operated by Tau Interactive LLC ("we," "us," or "our"), a Pennsylvania limited liability company.</p>
-<h2>2. Information We Collect</h2>
-<p><strong>Account information:</strong> When you create an account, we collect your email address (or Apple ID identifier if you use Sign in with Apple) and a password (stored securely via Firebase Authentication, never in plain text). We also assign your account a persistent Player ID.</p>
-<p><strong>Gameplay data:</strong> Match history, wins/losses, online and solo stats, Cambles (in-game virtual currency) balance and transaction history, cosmetic items owned (card backs, etc.), and friends list.</p>
-<p><strong>Device information:</strong> We do not currently use any analytics or crash-reporting service. If you contact us about a bug, we may ask you to share your device model and app version directly so we can investigate.</p>
-<p><strong>Push notification tokens:</strong> If you enable notifications, we collect a device token (via Expo Notifications) to deliver game invites and alerts.</p>
-<p><strong>Purchase data:</strong> If you buy Cambles through in-app purchases, Apple processes payment and shares limited transaction data with us (purchase confirmation, product ID) so we can credit your account. We do not receive or store your payment card details — Apple's StoreKit handles all billing.</p>
-<h2>3. How We Use Your Information</h2>
-<ul>
-<li>To operate matchmaking, live multiplayer game state, and friend invites</li>
-<li>To maintain your account, stats, and virtual currency balance</li>
-<li>To send game-related push notifications (invites, turn alerts)</li>
-<li>To diagnose bugs and improve app performance</li>
-<li>To enforce our Terms of Use and prevent abuse or cheating</li>
-</ul>
-<h2>4. How We Share Your Information</h2>
-<p>We do not sell your personal information. We share data only with:</p>
-<ul>
-<li><strong>Google Firebase</strong> (authentication, database, cloud functions, hosting)</li>
-<li><strong>Ably</strong> (real-time multiplayer game state transport)</li>
-<li><strong>Apple</strong> (App Store distribution, Sign in with Apple, StoreKit in-app purchases, push notification delivery)</li>
-<li><strong>Expo</strong> (push notification delivery infrastructure)</li>
-<li><strong>Google AdMob</strong> (in-app advertising; see Section 10 below for details)</li>
-</ul>
-<p>We may also disclose information if required by law, or to protect the rights, safety, or property of our users or Tau Interactive LLC. If Cambioo is acquired or merged, your information may transfer as part of that transaction; we will notify you beforehand.</p>
-<h2>5. Data Retention</h2>
-<p>We retain your account data for as long as your account is active. If you delete your account, we delete your personal data within 30 days, except where retention is required by law or necessary to resolve disputes or enforce our agreements.</p>
-<h2>6. Children's Privacy</h2>
-<p>Cambioo is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, contact us at tauinteractive@gmail.com and we will delete it promptly.</p>
-<h2>7. Your Rights</h2>
-<p>Depending on your state or country of residence, you may have the right to:</p>
-<ul>
-<li>Access the personal information we hold about you</li>
-<li>Request correction of inaccurate data</li>
-<li>Request deletion of your account and data</li>
-<li>Opt out of certain data uses</li>
-</ul>
-<p>To exercise these rights, contact us at tauinteractive@gmail.com.</p>
-<h2>8. Security</h2>
-<p>We use industry-standard measures to protect your information, including Firebase's security infrastructure and encrypted data transport. No method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
-<h2>9. In-App Purchases and Virtual Currency</h2>
-<p>Cambles are a virtual in-app currency with no real-world monetary value, purchasable through Apple's StoreKit. Purchase and refund requests are handled by Apple according to Apple's own policies — we do not process payments directly.</p>
-<h2>10. Advertising</h2>
-<p>Cambioo may display ads served by <strong>Google AdMob</strong>, including both rewarded ads (which you choose to watch in exchange for Cambles) and automatic ads (interstitials shown during normal use).</p>
-<p>We do not use these ads to track you across other companies' apps or websites, and we do not request Apple's App Tracking Transparency permission. All ad requests are configured as non-personalized, meaning ads are not targeted based on your activity outside Cambioo. AdMob and its partners may still process limited technical data (such as a device identifier) strictly to deliver an ad, cap how often you see the same ad, measure aggregate ad performance, and detect fraud — not to build a profile of you or track you across other apps.</p>
-<p>If you'd rather not see ads at all, you can purchase the <strong>Remove Ads</strong> upgrade from the Shop, a one-time purchase (not a subscription) that permanently disables ads on your account.</p>
-<p>Google's own use of data through AdMob is governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses data when you use our partners' sites or apps</a>.</p>
-<h2>11. Changes to This Policy</h2>
-<p>We may update this Privacy Policy periodically. Material changes will be reflected by updating the "Last updated" date above. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
-<h2>12. Contact Us</h2>
-<p><strong>Tau Interactive LLC</strong>
-Email: tauinteractive@gmail.com</p>
-</main>
+  <h2>1. Who We Are</h2>
+  <p>Cambioo is a mobile card game developed and operated by Tau Interactive LLC ("we," "us," or "our"), a Pennsylvania limited liability company.</p>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-links">
-      <a href="/privacy">Privacy Policy</a>
-      <a href="/terms">Terms of Use</a>
-      <a href="/support">Support</a>
-      <a href="/guidelines">Community Guidelines</a>
-    </div>
-    <div class="footer-copy">&copy; 2026 Tau Interactive LLC. All rights reserved.</div>
-  </div>
-</footer>
+  <h2>2. Information We Collect</h2>
+  <p><strong>Account information:</strong> When you create an account, we collect your email address (or Apple ID identifier if you use Sign in with Apple) and a password (stored securely via Firebase Authentication, never in plain text). We also assign your account a persistent Player ID.</p>
+  <p><strong>Gameplay data:</strong> Match history, wins/losses, online and solo stats, Cambles (in-game virtual currency) balance and transaction history, cosmetic items owned (card backs, etc.), and friends list.</p>
+  <p><strong>Device information:</strong> We do not currently use any analytics or crash-reporting service. If you contact us about a bug, we may ask you to share your device model and app version directly so we can investigate.</p>
+  <p><strong>Push notification tokens:</strong> If you enable notifications, we collect a device token (via Expo Notifications) to deliver game invites and alerts.</p>
+  <p><strong>Purchase data:</strong> If you buy Cambles through in-app purchases, Apple processes payment and shares limited transaction data with us (purchase confirmation, product ID) so we can credit your account. We do not receive or store your payment card details — Apple's StoreKit handles all billing.</p>
 
+  <h2>3. How We Use Your Information</h2>
+  <ul>
+    <li>To operate matchmaking, live multiplayer game state, and friend invites</li>
+    <li>To maintain your account, stats, and virtual currency balance</li>
+    <li>To send game-related push notifications (invites, turn alerts)</li>
+    <li>To diagnose bugs and improve app performance</li>
+    <li>To enforce our Terms of Use and prevent abuse or cheating</li>
+  </ul>
+
+  <h2>4. How We Share Your Information</h2>
+  <p>We do not sell your personal information. We share data only with:</p>
+  <ul>
+    <li><strong>Google Firebase</strong> (authentication, database, cloud functions, hosting)</li>
+    <li><strong>Ably</strong> (real-time multiplayer game state transport)</li>
+    <li><strong>Apple</strong> (App Store distribution, Sign in with Apple, StoreKit in-app purchases, push notification delivery)</li>
+    <li><strong>Expo</strong> (push notification delivery infrastructure)</li>
+    <li><strong>Google AdMob</strong> (in-app advertising; see Section 10 below for details)</li>
+  </ul>
+  <p>We may also disclose information if required by law, or to protect the rights, safety, or property of our users or Tau Interactive LLC. If Cambioo is acquired or merged, your information may transfer as part of that transaction; we will notify you beforehand.</p>
+
+  <h2>5. Data Retention</h2>
+  <p>We retain your account data for as long as your account is active. If you delete your account, we delete your personal data within 30 days, except where retention is required by law or necessary to resolve disputes or enforce our agreements.</p>
+
+  <h2>6. Children's Privacy</h2>
+  <p>Cambioo is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, contact us at <a href="mailto:tauinteractive@gmail.com">tauinteractive@gmail.com</a> and we will delete it promptly.</p>
+
+  <h2>7. Your Rights</h2>
+  <p>Depending on your state or country of residence, you may have the right to:</p>
+  <ul>
+    <li>Access the personal information we hold about you</li>
+    <li>Request correction of inaccurate data</li>
+    <li>Request deletion of your account and data</li>
+    <li>Opt out of certain data uses</li>
+  </ul>
+  <p>To exercise these rights, contact us at <a href="mailto:tauinteractive@gmail.com">tauinteractive@gmail.com</a>.</p>
+
+  <h2>8. Security</h2>
+  <p>We use industry-standard measures to protect your information, including Firebase's security infrastructure and encrypted data transport. No method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+
+  <h2>9. In-App Purchases and Virtual Currency</h2>
+  <p>Cambles are a virtual in-app currency with no real-world monetary value, purchasable through Apple's StoreKit. Purchase and refund requests are handled by Apple according to Apple's own policies — we do not process payments directly.</p>
+
+  <h2>10. Advertising</h2>
+  <p>Cambioo may display ads served by <strong>Google AdMob</strong>, including both rewarded ads (which you choose to watch in exchange for Cambles) and automatic ads (interstitials shown during normal use).</p>
+  <p>We do not use these ads to track you across other companies' apps or websites, and we do not request Apple's App Tracking Transparency permission. All ad requests are configured as non-personalized, meaning ads are not targeted based on your activity outside Cambioo. AdMob and its partners may still process limited technical data (such as a device identifier) strictly to deliver an ad, cap how often you see the same ad, measure aggregate ad performance, and detect fraud — not to build a profile of you or track you across other apps.</p>
+  <p>If you'd rather not see ads at all, you can purchase the <strong>Remove Ads</strong> upgrade from the Shop, a one-time purchase (not a subscription) that permanently disables ads on your account.</p>
+  <p>Google's own use of data through AdMob is governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses data when you use our partners' sites or apps</a>.</p>
+
+  <h2>11. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy periodically. Material changes will be reflected by updating the "Last updated" date above. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+  <h2>12. Contact Us</h2>
+  <p><strong>Tau Interactive LLC</strong><br>
+  Email: <a href="mailto:tauinteractive@gmail.com">tauinteractive@gmail.com</a></p>
+
+  <footer>&copy; 2026 Tau Interactive LLC. All rights reserved.</footer>
+</div>
 </body>
 </html>
